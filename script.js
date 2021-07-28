@@ -14,7 +14,7 @@ function loading() {
 }
 
 // Hide loading
-function complete() {
+function completeLoading() {
     quoteContainer.hidden = false;
     loader.hidden = true;
 }
@@ -38,7 +38,7 @@ function newQuote() {
     }
     // Set Quote, Hide Loader
     quoteText.textContent = quote.text;
-    complete();
+    completeLoading();
 }
 
 // Get Quotes From API
